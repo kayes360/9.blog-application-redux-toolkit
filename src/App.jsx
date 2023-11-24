@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import { Route, Router, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Post from "./pages/Post";
+import Navbar from "./components/Navbar";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/post/:id" element={<Post />}></Route>
+      </Routes>
     </>
-  )
+
+    // 1.  ✅ Fetch From Server
+    // 2.  ✅ Show Fetched Data
+    // 3.  ✅ Show Fetched Data Serially As Server Response
+    // 4.  ✅ Sort Fetched Data By Newest
+    // 5.  ✅ Sort Fetched Data By Most Liked
+    // 6.  ✅ Filter By All and Saved 
+    // 7.  ✅ Thumbnail And Title Will Be Clickable And Redirect To Individual Video Page
+    // 8.  ✅ Related Blogs Will Be Shown In Sidebar Excluding The Current Blog 
+    // 9.  ✅ If Save Button Clicked Video Will Be Saved And Saved Will Be Shown In UI 
+    // 10. ✅  If Like Is Clicked Like Will Increase And Sync With Server
+
+
+    
+  );
 }
 
-export default App
+export default App;
