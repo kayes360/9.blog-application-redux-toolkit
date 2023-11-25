@@ -1,8 +1,11 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+JSON-SERVER-REPO
+https://github.com/kayes360/9.blog-application-redux-toolkit-server
+JSON-SERVER-URL
+https://nine-blog-application-redux-toolkit.onrender.com/
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+PROJECT-LIVE-URL
+https://brilliant-cocada-6d9d5a.netlify.app
+PROJECT-REPO
+https://github.com/kayes360/9.blog-application-redux-toolkit
